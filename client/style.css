@@ -19,9 +19,33 @@ ul{
     padding: 0;
 }
 ul li{
+    float: left;
+    margin-right: 20px;
     background-color: #fff;
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.hero{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero h1{
+    font-size: 50px;
+    margin: 0;
+}
+.hero p{
+    font-size: 20px;
+}
+.container .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
