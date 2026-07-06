@@ -49,3 +49,33 @@ ul li{
     border-radius: 5px;
     margin-top: 20px;
 }
+.about{
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+}
+.about1{
+    background-color: #fff;
+    padding: 50px 20px;
+    width: 50%;
+}
+.about1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+.about2{
+    background-color: #4CAF50;
+    padding: 50px 20px;
+    width: 50%;
+}
+.about2 h2{
+    color: #fff;
+    text-align: center;
+}
+.about2 p{
+    color: #fff;
+    text-align: center;
+}
