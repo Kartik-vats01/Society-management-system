@@ -1,81 +1,39 @@
 body{
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
-.header{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.site-header{
+    width: 100%;
+   background-color: rgb(29, 29, 220);
+   color: white;
+   margin: 0;
 }
-.container{
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+.logo{
+    padding: 10px;
 }
-ul{
-    list-style-type: none;
+.logo h1{
+    margin: 0;
+    font-size: 30px;
+    width: 30%;
+}
+.nav1{
+ width: 65%;
+  float: right;
+}
+.nav1  ul{
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
-ul li{
-    float: left;
+.nav1 ul li{
+    padding: 10px;
+    float: right;
+    color:white;
     margin-right: 20px;
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
 }
-.hero{
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-.hero h1{
-    font-size: 50px;
-    margin: 0;
-}
-.hero p{
-    font-size: 20px;
-}
-.container .btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #4CAF50;
+.nav1  ul li a{
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.about{
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-    width: 100%;
-}
-.about1{
-    background-color: #fff;
-    padding: 50px 20px;
-    width: 50%;
-}
-.about1 img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-}
-.about2{
-    background-color: #4CAF50;
-    padding: 50px 20px;
-    width: 50%;
-}
-.about2 h2{
-    color: #fff;
-    text-align: center;
-}
-.about2 p{
-    color: #fff;
-    text-align: center;
 }
