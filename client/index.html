@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +14,13 @@
          <div class="logo">
             <h1>MySociety</h1>
          </div>
-         <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+         <div class="header-actions">
+            <div class="auth-links">
+                <a href="#">Log In</a>
+                <span>|</span>
+                <a href="#">Sign up</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
             <nav class="nav1">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -19,13 +28,14 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+         </div>
         </header>
         <div class="container">
         <div class="hero">
             <div class= "herocontent">
                 <h1>MySociety</h1>
                 <p>Welcome to our community!</p>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="about.html" class="btn">Learn More</a>
             </div>
         </div>
@@ -34,5 +44,28 @@
             <p>We are a community-driven platform that aims to connect people and foster collaboration. Our mission is to create a space where individuals can share ideas, resources, and support each other in achieving their goals.</p>
             <a href="about.html" class="btn">Read More</a>
         </div>
+        <script>
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav1');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active', isOpen);
+                    navToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                        const clickedInside = navMenu.contains(event.target) || navToggle.contains(event.target);
+                        if (!clickedInside) {
+                            navMenu.classList.remove('active');
+                            navToggle.classList.remove('active');
+                            navToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            }
+        </script>
 </body>
 </html>
