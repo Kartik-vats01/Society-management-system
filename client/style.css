@@ -162,9 +162,14 @@ body{
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    box-sizing: border-box;
+    background-color:rgba(28, 29, 220, 0.8);
+    color: white;
 }
 .society-info{
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    box-sizing: border-box;
+    color:rgba(28, 29, 220, 0.8)
 }
