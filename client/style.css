@@ -166,10 +166,62 @@ body{
     background-color:rgba(28, 29, 220, 0.8);
     color: white;
 }
+.content-img{
+    width: 48%;
+    height: auto;
+    margin: 10px;
+    float: left;
+
+}
+.content-text{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    float: left;
+      background-color:rgba(28, 29, 220, 0.8);
+}
+.content-text h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.content-text p{
+    font-size: 14px;
+    margin: 2px;
+}
+.content-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 .society-info{
     width: 100%;
     padding: 20px;
     margin: 0 auto;
     box-sizing: border-box;
     color:rgba(28, 29, 220, 0.8)
+}
+.society-img{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+.society-text{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+.society-text h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.society-text p{
+    font-size: 14px;
+    margin: 2px;
+}
+.society-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
