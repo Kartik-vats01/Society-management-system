@@ -161,67 +161,122 @@ body{
 .content{
     width: 100%;
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     box-sizing: border-box;
-    background-color:rgba(28, 29, 220, 0.8);
+    background-color: rgba(28, 29, 220, 0.8);
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-.content-img{
-    width: 48%;
-    height: auto;
-    margin: 10px;
-    float: left;
-
-}
-.content-text{
-    width: 50%;
-    height: auto;
-    margin: 10px;
-    float: left;
-      background-color:rgba(28, 29, 220, 0.8);
-}
-.content-text h2{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-.content-text p{
-    font-size: 14px;
-    margin: 2px;
-}
-.content-img img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-.society-info{
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    color:rgba(28, 29, 220, 0.8)
-}
-.society-img{
-    width: 50%;
-    height: auto;
-    margin: 10px;
-    float: left;
-}
+.content-img,
+.content-text,
+.society-img,
 .society-text{
     width: 50%;
-    height: auto;
-    margin: 10px;
-    float: left;
+    box-sizing: border-box;
 }
+.content-img,
+.society-img{
+    display: flex;
+}
+.content-text{
+    background-color: transparent;
+}
+.content-text h2,
 .society-text h2{
     font-size: 30px;
     margin-bottom: 10px;
 }
+.content-text p,
 .society-text p{
     font-size: 14px;
-    margin: 2px;
+    margin: 2px 0 10px;
+    line-height: 1.6;
 }
+.content-img img,
 .society-img img{
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 25%;
     border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+.society-info{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+    color: rgba(28, 29, 220, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.society-text{
+    padding-left: 10px;
+}
+.complaint-form{
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto 40px;
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+.complaint-form h2{
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: rgba(28, 29, 220, 0.8);
+}
+.complaint-form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: rgba(28, 29, 220, 0.8);
+}
+.complaint-form textarea,
+.complaint-form input[type="text"]{
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font: inherit;
+}
+.upload-group{
+    margin-bottom: 16px;
+}
+.upload-btn{
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: rgba(28, 29, 220, 0.8);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.complaint-form input[type="file"]{
+    display: none;
+}
+.send-btn{
+    border: none;
+    padding: 12px 20px;
+}
+
+@media (max-width: 768px) {
+    .content,
+    .society-info{
+        flex-direction: column;
+    }
+
+    .content-img,
+    .content-text,
+    .society-img,
+    .society-text{
+        width: 100%;
+    }
+
+    .society-text{
+        padding-left: 0;
+    }
 }

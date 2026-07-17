@@ -44,22 +44,39 @@
                 <img src="https://tse2.mm.bing.net/th/id/OIP.liZqpvbx3sMZi27sjAcn-wHaEo?r=0&w=2880&h=1800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Community Image">
             </div>
             <div class="content-text">
-            <h2>About Us</h2>
-            <p>We are a community-driven platform that aims to connect people and foster collaboration. Our mission is to create a space where individuals can share ideas, resources, and support each other in achieving their goals.</p>
-            <a href="about.html" class="btn">Read More</a>
+                <h2>About Us</h2>
+                <p>We are a community-driven platform that aims to connect people and foster collaboration. Our mission is to create a space where individuals can share ideas, resources, and support each other in achieving their goals.</p>
+                <a href="about.html" class="btn">Read More</a>
+            </div>
         </div>
-        </div>
+
         <div class="society-info">
             <div class="society-img">
                 <img src="https://cdn.pixabay.com/photo/2021/07/21/18/32/car-6483720_1280.jpg" alt="Society Image">
             </div>
             <div class="society-text">
-            <h2>Our Society</h2>
-            <p>Our society is built on the principles of inclusivity, transparency, and mutual respect. <br>
-                We believe in empowering our members to take initiative and contribute to the growth of our community.</p>
-            <a href="about.html" class="btn">Join Us</a>
+                <h2>Our Society</h2>
+                <p>Our society is built on the principles of inclusivity, transparency, and mutual respect. We believe in empowering our members to take initiative and contribute to the growth of our community.</p>
+                <a href="about.html" class="btn">Join Us</a>
+            </div>
         </div>
-        </div>
+
+        <form class="complaint-form">
+            <h2>Report a Problem</h2>
+            <label for="problem-description">Problem Description</label>
+            <textarea id="problem-description" name="problem-description" rows="5" placeholder="Describe the issue here..."></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter the location">
+
+            <div class="upload-group">
+                <label class="upload-btn" for="image-upload">Upload / Capture Image</label>
+                <input type="file" id="image-upload" name="image-upload" accept="image/*" capture="environment">
+            </div>
+
+            <button type="submit" class="btn send-btn">Send</button>
+        </form>
+
         <script>
             const navToggle = document.querySelector('.nav-toggle');
             const navMenu = document.querySelector('.nav1');
