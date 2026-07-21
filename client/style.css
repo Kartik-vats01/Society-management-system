@@ -254,9 +254,16 @@ body{
     display: inline-block;
     padding: 10px 16px;
     background-color: rgba(28, 29, 220, 0.8);
-    color: white;
+    color: white !important;
     border-radius: 8px;
     cursor: pointer;
+    text-align: center;
+}
+.upload-btn:hover{
+    background-color: rgb(29, 29, 220);
+    color: white !important;
+    transform: translateY(2px);
+    box-shadow: 0 4px 12px rgba(28, 29, 220, 0.5);
 }
 .complaint-form input[type="file"]{
     display: none;
