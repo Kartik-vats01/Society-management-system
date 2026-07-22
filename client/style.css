@@ -339,3 +339,52 @@ body{
         padding-left: 0;
     }
 }
+
+/* About Page Styles */
+.abcontainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color:white;
+    background-color: rgb(29, 29, 220);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.aboutHeader {
+    color:white;
+    background-color: rgb(29, 29, 220);
+    text-align: center;
+    margin:0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutHeader h1 {
+    font-size: 46px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+.aboutContent {
+    text-align: left;
+    background-color: rgba(27, 27, 206, 0.8);
+}
+.aboutContent p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 10px;
+    padding-top:5px;
+    color: white;
+    height: 30px;
+}
+.aboutContent p:hover{
+    text-decoration: underline;
+}
+.aboutContent span {
+    font-weight: bold;
+    color: white;
+}
+.aboutContent span:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
