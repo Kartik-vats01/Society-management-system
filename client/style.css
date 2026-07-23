@@ -388,3 +388,27 @@ body{
     text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
+.socFeatures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 15px 4px;
+    background-color:rgb(228, 224, 224);
+    width: 100%;
+    margin: 0 auto;
+}
+.socFeature1{
+    width: 300px;
+    height: 200px;
+    background-color:white;
+    color: rgba(28, 29, 220, 0.8);
+    border-radius: 10px;
+    box-shadow: 4px 8px 25px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
