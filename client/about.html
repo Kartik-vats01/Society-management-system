@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <header class="site-header">
+         <div class="logo">
+            <h1>MySociety</h1>
+         </div>
+         <div class="header-actions">
+            <div class="auth-links">
+                <a href="#">Log In</a>
+                <span>|</span>
+                <a href="#">Sign up</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+        </header>
     <div class ="abcontainer">
         <div class="aboutHeader">
             <h1>About us</h1>
@@ -33,5 +53,49 @@
             <p>lorem ipsum dolor sit amet</p>
         </div>
     </div>
+     <div class="content">
+            <div class="content-img">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.liZqpvbx3sMZi27sjAcn-wHaEo?r=0&w=2880&h=1800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Community Image">
+            </div>
+            <div class="content-text">
+                <h2>About Us</h2>
+                <p>We are a community-driven platform that aims to connect people and foster collaboration. Our mission is to create a space where individuals can share ideas, resources, and support each other in achieving their goals.</p>
+                <a href="about.html" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="society-info">
+             <div class="society-text">
+                <h2>Our Society</h2>
+                <p>Our society is built on the principles of inclusivity, transparency, and mutual respect. We believe in empowering our members to take initiative and contribute to the growth of our community.</p>
+                <a href="about.html" class="btn">Join Us</a>
+            </div>
+            <div class="society-img">
+                <img src="https://cdn.pixabay.com/photo/2021/07/21/18/32/car-6483720_1280.jpg" alt="Society Image">
+            </div>
+        </div>
+          <script>
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav1');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active', isOpen);
+                    navToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                        const clickedInside = navMenu.contains(event.target) || navToggle.contains(event.target);
+                        if (!clickedInside) {
+                            navMenu.classList.remove('active');
+                            navToggle.classList.remove('active');
+                            navToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            }
+        </script>
 </body>
 </html>
